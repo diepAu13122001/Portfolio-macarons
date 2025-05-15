@@ -1,0 +1,97 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(var(--current-rgb), 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectDetails {
+  border-radius: var(--radius-l);
+  background-color: var(--current-mode);
+  padding: 40px;
+  box-shadow: var(--current-attended-color) 0px 3px 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  max-width: 1100px;
+  scrollbar-width: thin;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+
+/* The rest of your CSS can remain the same */
+
+/* carousel */
+#project-imgs {
+  width: 100%;
+  overflow: hidden;
+
+  img,
+  iframe {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-l);
+  }
+}
+
+.project-detail {
+  padding: 0 15px;
+  margin-top: 10px;
+  height: 100%;
+  max-height: 300px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--current-color) transparent;
+}
+
+/* width */
+.project-detail::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.project-detail::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.project-detail::-webkit-scrollbar-thumb {
+  background: var(--current-color);
+  border-radius: 10px;
+}
+
+#close-popup-btn {
+  cursor: pointer;
+  color: var(--current-attended-color); /* Or any hover effect */
+  border: none;
+}
+
+#close-popup-btn:hover {
+  border: none;
+  background-color: transparent;
+}
+
+/* tags */
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-flow: row wrap;
+}
+
+.tag {
+  padding: 5px 10px;
+  background-color: var(--current-attended-color);
+  border-radius: var(--radius-m);
+  cursor: pointer;
+}

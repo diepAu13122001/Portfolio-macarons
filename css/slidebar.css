@@ -1,10 +1,10 @@
 .full-intro {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background: var(--current-attended-color);
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,9 +18,12 @@
   cursor: grabbing;
 }
 
-.full-intro:hover {
-  width: 90%;
-  transition: all 1s ease-in;
+.full-intro .top-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .full-intro .nav-logo {
@@ -41,7 +44,8 @@
   }
   li > a {
     text-decoration: none;
-    color: var(--disable);
+    /* color: var(--disable); */
+    color: var(--current-color);
     display: inline-block;
     position: relative;
     transition: all 0.5s ease;
@@ -80,17 +84,19 @@
 .left {
   width: 300px;
   text-align: left;
-  transition: all 1s ease-in;
-  &:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* &:hover {
     width: 300px;
-  }
+  } */
   .p {
     display: none;
   }
 
   .nav-logo {
-    position: absolute;
-    top: 15px;
+    /* position: absolute;
+    top: 15px; */
     img {
       width: 150px;
       height: 75px;
@@ -100,11 +106,20 @@
   .nav-social {
     position: absolute;
     bottom: 15px;
+
     .line-l {
       width: 300px;
     }
     .icons {
       width: 200px;
     }
+    .icons > .comp-margin:first-child {
+      margin-left: 25px;
+    }
   }
+}
+
+.left .top-intro {
+  padding-top: 60px;
+  justify-content: start;
 }

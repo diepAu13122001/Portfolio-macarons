@@ -1,0 +1,30 @@
+.main-container {
+  width: 100%;
+  grid-column: 4 / 12;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  flex-direction: column;
+  height: calc(100vh - 80px); /*adjusted height */
+  margin-top: 80px;
+  overflow-x: hidden; /* prevent scrolling */
+}
+
+.main-header {
+  width: max-content;
+  margin-left: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  hr {
+    margin-left: 0;
+  }
+}
+
+.main-content {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  width: 100%;
+}

@@ -1,0 +1,83 @@
+.projects {
+  padding: 30px;
+  max-height: 100%;
+  max-width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* allow horizontal scrolling */
+  overflow-y: hidden;
+  scroll-behavior: smooth; /* optional, for smoother scrolling */
+}
+
+/* width */
+.projects::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+.projects::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.projects::-webkit-scrollbar-thumb {
+  background: var(--current-color);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Handle on hover */
+.projects::-webkit-scrollbar-thumb:hover {
+  background: var(--current-attended-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card {
+  height: 400px;
+  min-width: 450px;
+  max-width: 450px;
+  overflow: hidden;
+  background-color: var(--current-mode);
+  border-top-left-radius: var(--radius-l);
+  border-top-right-radius: var(--radius-l);
+  border: 5px solid transparent;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  border: 5px solid var(--current-attended-color);
+
+  .project-ava img {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1);
+  }
+}
+
+.project-ava {
+  height: 260px;
+  overflow: hidden;
+}
+
+.project-ava img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-info {
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .project-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

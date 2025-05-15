@@ -1,14 +1,21 @@
 :root {
-  --light-background: #ffefc8;
+  /* --light-background: #ffefc8; */
+  --light-background: #fff8e6;
   --dark-background: #09122c;
   --light-color: #09122c;
   --dark-color: #ffefc8;
+  --light-rgb: 255, 248, 230;
+  --dark-rgb: 9, 18, 44;
   --disable: #76787d;
   --error: #e50046;
-  --purple: #b2a5ff;
-  --pink: #e0aed0;
-  --orange: #ff9d23;
-  --green: #b8d576;
+  /* --purple: #b2a5ff; */
+  --purple: #9fb3df;
+  --pink: #ff748b;
+  /* --orange: #ff9d23; */
+  --orange: #b6a28e;
+  /* --green: #b8d576; */
+  /* --green: #42b9bc; */
+  --green: #42b9bc;
   --phone-heading1: 32px;
   --phone-heading2: 28px;
   --phone-heading3: 22px;
@@ -18,25 +25,29 @@
   --heading3: 25px;
   --paragraph: 18px;
   --radius-m: 10px;
-  --radius-l: 20px;
+  --radius-l: 25px;
   --current-attended-color: var(--purple);
   --current-mode: var(--light-background);
   --current-color: var(--light-color);
+  --current-rgb: var(--dark-rgb);
 }
 
 * {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 18px;
+  outline: none;
+  box-sizing: border-box;
 }
 body {
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
+  height: 100vh;
 }
 
 .dark {
@@ -44,6 +55,7 @@ body {
   --current-mode: var(--dark-background);
   color: var(--dark-color);
   --current-color: var(--dark-color);
+  --current-rgb: var(--dark-rgb);
   #light {
     display: block;
   }
@@ -57,12 +69,37 @@ body {
   --current-mode: var(--light-background);
   color: var(--light-color);
   --current-color: var(--light-color);
+  --current-rgb: var(--light-rgb);
   #dark {
     display: block;
   }
   #light {
     display: none;
   }
+}
+
+img,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+i,
+span,
+li,
+ul,
+ol,
+.p,
+.h1,
+.h2,
+.h3 {
+  user-select: none;
+  margin: 0;
+  padding: 0;
 }
 
 .h1 {
@@ -80,7 +117,6 @@ body {
 .h3 {
   font-weight: bolder;
   font-size: var(--heading3);
-  text-transform: capitalize;
 }
 
 .p {
@@ -106,6 +142,8 @@ i {
   border-style: solid;
   border-color: var(--current-color);
   margin-bottom: 15px;
+  margin-top: 10px;
+  opacity: 1;
 }
 
 .line-l {
@@ -115,10 +153,34 @@ i {
 
 .line-m {
   width: 100px;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .line-s {
   width: 50px;
   border-width: 1px;
+}
+
+.text-special {
+  color: var(--current-attended-color);
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.border-special {
+  border-color: var(--current-attended-color);
+}
+
+.hide {
+  display: none;
+}
+
+.disable {
+  color: var(--disable);
+  margin-bottom: 15px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }

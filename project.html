@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diep Au's</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/slidebar.css" />
+    <link rel="stylesheet" href="./css/right-settings.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/skills.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/projectDetail.css" />
+  </head>
+  <body class="dark">
+    <aside class="full-intro left">
+      <div class="top-intro">
+        <div class="nav-logo margin">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/af/Zuganov-sign.png"
+            alt="logo"
+          />
+          <div class="p">
+            Hi, my full name is <span class="h3">Au Ngoc Diep</span>, a
+            <span class="h3">Web Developer</span> passionate about building
+            clean, efficient, and user-friendly websites.
+          </div>
+        </div>
+
+        <ul class="nav-links margin"></ul>
+      </div>
+
+      <div class="nav-social margin">
+        <hr class="line line-l" />
+        <div class="icons">
+          <span class="comp-margin"><i class="fa-brands fa-github"></i></span>
+          <span class="comp-margin"><i class="fa-brands fa-facebook"></i></span>
+          <span class="comp-margin"><i class="fa-solid fa-envelope"></i></span>
+          <span class="comp-margin"><i class="fa-solid fa-phone"></i></span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-container">
+      <!-- title -->
+      <div class="main-header">
+        <div class="h1 text-special" id="header-title">About me</div>
+        <hr class="line line-m border-special" />
+      </div>
+
+      <div class="main-content">
+        <!-- section -->
+
+        <section id="projectDetails" class="projectDetails">
+          <!-- left -->
+          <div class="about-left">
+            <!-- carousel -->
+            <div id="project-imgs" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#project-imgs"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#project-imgs"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#project-imgs"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://www.ntaskmanager.com/wp-content/uploads/2020/10/project-design-in-project-management.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://cdn.vietnambiz.vn/2020/3/24/project-planning-header2x-1585044567657817815413.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://assets.plan.io/images/blog/title-IT-project-management-explained.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#project-imgs"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#project-imgs"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- desc -->
+            <div class="project-detail">
+              <div class="p disable" id="project-created-at">Sep, 2021</div>
+
+              <div class="p" id="project-description">
+                I'm currently an Engineer at Upstatement building things for the
+                web with some awesome people. I recently graduated from
+                Northeastern University after completing three awesome six-month
+                co-ops at MullenLowe U.S., Starry, and Apple Music.
+                <br />
+                As a software engineer, I enjoy bridging the gap between
+                engineering and design — combining my technical knowledge with
+                my keen eye for design to create a beautiful product. My goal is
+                to always build applications that are scalable and efficient
+                under the hood while providing engaging, pixel-perfect user
+                experiences.
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <!-- table -->
+          <div class="about-right">
+            <table class="row-table">
+              <tr>
+                <th class="p text-special">Age:</th>
+                <td class="p">25</td>
+              </tr>
+              <tr>
+                <th class="p text-special">Loc:</th>
+                <td class="p">
+                  HCM city, <span class="text-special">VietNam</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="p text-special">Email:</th>
+                <td class="p">
+                  <a href="mailto:diepau1312@gmail.com">diepau1312@gmail.com</a>
+                </td>
+              </tr>
+              <tr>
+                <th class="p text-special">Phone:</th>
+                <td class="p">
+                  <a href="tel:+84764699015">+84 764 699 015</a>
+                </td>
+              </tr>
+              <tr>
+                <th class="p text-special">Lang:</th>
+                <td class="p">Vietnamese, English, Chinese</td>
+              </tr>
+            </table>
+            <div class="button-groups">
+              <a href="#" class="btn" id="live-demo-link">Live Demo</a>
+              <a href="#" class="btn" id="code-link">Code</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <aside class="right-settings">
+      <div class="setting-comp" id="mode-btn">
+        <i id="light" class="fa-solid fa-sun"></i>
+        <i id="dark" class="fa-solid fa-moon"></i>
+      </div>
+      <div class="setting-comp" id="color-list-btn">
+        <ul>
+          <li data-color="orange" class="choosed comp-margin"></li>
+          <li data-color="pink" class="comp-margin"></li>
+          <li data-color="purple" class="comp-margin"></li>
+          <li data-color="green" class="comp-margin"></li>
+        </ul>
+      </div>
+    </aside>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/mode.js"></script>
+    <script src="./js/slidebar.js"></script>
+    <!-- <script src="./js/sections.js"></script> -->
+    <script src="./js/skills.js"></script>
+    <script src="./js/projects.js"></script>
+  </body>
+</html>
