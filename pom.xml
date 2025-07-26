@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>vn.diepau</groupId>
 	<artifactId>portfolio</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1</version>
 	<name>portfolio</name>
 	<description>New portfolio version 2025</description>
 	<url/>
