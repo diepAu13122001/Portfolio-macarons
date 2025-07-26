@@ -37,7 +37,6 @@ form {
       border: 2px solid var(--current-attended-color);
     }
   }
-
   textarea {
     padding: 20px;
     height: 250px;
