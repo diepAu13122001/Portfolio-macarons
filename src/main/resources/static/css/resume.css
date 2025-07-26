@@ -1,0 +1,63 @@
+#resume {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+  align-items: baseline;
+}
+
+.title {
+  margin: 30px 0;
+}
+
+.resume-card {
+  margin: 30px 10px;
+  padding: 0 0 0 50px;
+  border-left: 2px solid var(--current-attended-color);
+  position: relative;
+  cursor: pointer;
+}
+
+.resume-time {
+  padding: 0;
+  margin: 15px 0;
+}
+
+.resume-title,
+.resume-desc {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.circle-dot {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--current-attended-color);
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  background: var(--current-attended-color);
+  transition: all 0.5s ease;
+}
+
+.resume-card:hover {
+  .circle-dot {
+    background: var(--current-mode);
+    transition: all 0.5s ease;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #resume {
+    .about-left, .about-right {
+      width: fit-content;
+      justify-self: center;
+    }
+  }
+  .resume-card {
+    max-width: 400px;
+  }
+
+  .title {
+    margin: 15px 0;
+  }
+}

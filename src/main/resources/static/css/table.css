@@ -1,0 +1,37 @@
+.row-table {
+  border-collapse: collapse; /* clean spacing */
+  margin-top: 10px;
+  width: 100%;
+}
+
+.row-table th,
+.row-table td {
+  padding: 8px 12px; /* space inside cells */
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--current-attended-color); /* line under each row */
+}
+
+/* Optional: emphasize headers */
+.row-table th {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.row-table td {
+  min-width: 300px;
+}
+
+/* Optional: link styling */
+.row-table a {
+  color: var(--current-color); /* use your theme var */
+  text-decoration: none;
+}
+
+.row-table a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+
+}

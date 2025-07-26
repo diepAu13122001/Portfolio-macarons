@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="slidebar">
+    <aside class="full-intro">
+        <div class="top-intro">
+            <div class="nav-logo margin">
+                <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/af/Zuganov-sign.png"
+                        alt="logo"
+                />
+            </div>
+
+            <ul class="nav-links margin">
+                <li class="h3 active">
+                    <a href="#about">About me</a>
+                </li>
+                <li class="h3"><a href="#projects">Projects</a></li>
+                <li class="h3"><a href="#resume">Resume</a></li>
+                <li class="h3">
+                    <a href="#contact">Contact me</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-social margin">
+            <hr class="line line-l" />
+            <div class="icons">
+                <span class="comp-margin"><i class="fa-brands fa-github"></i></span>
+                <span class="comp-margin"><i class="fa-brands fa-facebook"></i></span>
+                <span class="comp-margin"><i class="fa-solid fa-envelope"></i></span>
+                <span class="comp-margin"><i class="fa-solid fa-phone"></i></span>
+            </div>
+        </div>
+    </aside>
+</th:block>
+</html>
+

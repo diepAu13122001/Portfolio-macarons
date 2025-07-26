@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="right-setting">
+    <aside class="right-settings">
+        <div class="setting-comp" id="expand-slidebar">
+            <button class="btn" id="expand-nav-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="btn" id="close-nav-btn">x</button>
+        </div>
+
+        <div class="setting-comp" id="mode-btn">
+            <i id="light" class="fa-solid fa-sun"></i>
+            <i id="dark" class="fa-solid fa-moon"></i>
+        </div>
+        <div class="setting-comp" id="color-list-btn">
+            <ul>
+                <li data-color="orange" class="choosed comp-margin"></li>
+                <li data-color="pink" class="comp-margin"></li>
+                <li data-color="purple" class="comp-margin"></li>
+                <li data-color="green" class="comp-margin"></li>
+            </ul>
+        </div>
+    </aside>
+</th:block>
+</html>
+

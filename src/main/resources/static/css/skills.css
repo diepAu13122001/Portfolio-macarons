@@ -1,0 +1,19 @@
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 35px;
+  height: auto;
+}
+
+.skill-title {
+  text-transform: uppercase;
+}
+
+.skill-items li {
+  list-style: none;
+  text-transform: capitalize;
+  a {
+    text-decoration: none;
+    color: var(--current-color);
+  }
+}

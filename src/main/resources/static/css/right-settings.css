@@ -1,0 +1,95 @@
+.right-settings {
+  grid-column-start: 12;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  justify-self: end;
+  margin-top: 15px;
+}
+
+.right-settings .setting-comp {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  right: 0;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  margin-top: 13px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+}
+
+.right-settings .setting-comp:hover {
+  box-shadow: var(--current-attended-color) 0px 3px 8px;
+}
+
+.right-settings .setting-comp ul {
+  list-style: none;
+  transition: all 1s ease-in-out;
+  li {
+    display: none;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--current-attended-color);
+  }
+
+  li:hover {
+    border: 1px solid var(--current-color);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .choosed {
+    display: block;
+  }
+}
+
+.right-settings #color-list-btn:hover {
+  height: inherit;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0;
+
+  li {
+    display: block;
+  }
+}
+
+#expand-slidebar {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .right-settings {
+    .setting-comp {
+      box-shadow: var(--current-attended-color) 0px 3px 8px;
+      background-color: var(--current-mode);
+      font-size: var(--phone-paragraph);
+      width: 40px;
+      height: 40px;
+      right: -5px;
+      ul li {
+        width: 20px;
+        height: 20px;
+      }
+      i {
+        font-size: var(--phone-paragraph);
+      }
+    }
+  }
+  #expand-slidebar {
+    display: flex;
+  }
+}

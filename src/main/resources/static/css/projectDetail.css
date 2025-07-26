@@ -1,0 +1,148 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1003;
+  background-color: rgba(var(--current-rgb), 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectDetails {
+  position: relative;
+  border-radius: var(--radius-l);
+  background-color: var(--current-mode);
+  padding: 40px;
+  box-shadow: var(--current-attended-color) 0px 3px 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  max-width: 1100px;
+  scrollbar-width: thin;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  max-height: 650px;
+  .about-right {
+    height: 100%;
+  }
+}
+
+/* The rest of your CSS can remain the same */
+
+/* carousel */
+#project-imgs {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  img,
+  iframe {
+    height: 350px;
+    max-width: 800px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-l);
+    padding: 0;
+    margin: 0;
+  }
+}
+#project-name {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.project-detail {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--current-color) transparent;
+  margin-top: 20px;
+  max-height: 80%;
+}
+
+/* width */
+.project-detail::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.project-detail::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.project-detail::-webkit-scrollbar-thumb {
+  background: var(--current-color);
+  border-radius: 10px;
+}
+
+#close-popup-btn {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid var(--current-attended-color);
+  position: absolute;
+  top: 0;
+  right: -70px;
+}
+
+#close-popup-btn:hover {
+  background-color: var(--current-attended-color);
+}
+
+/* tags */
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-flow: row wrap;
+}
+
+.tag {
+  padding: 5px 10px;
+  background-color: var(--current-attended-color);
+  border-radius: var(--radius-m);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  #close-popup-btn {
+    border: none;
+    right: 5px;
+    top: 5px;
+  }
+  #close-popup-btn:hover {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .projectDetails {
+    max-height: 100%;
+    .about-left {
+      grid-row: 1;
+      #project-imgs {
+        width: 100%;
+        text-align: center;
+        img,
+        iframe {
+          width: 500px;
+          height: 230px;
+        }
+      }
+    }
+    .about-right {
+      height: 100%;
+
+      grid-row: 2;
+      width: 100%;
+      .project-detail {
+        width: 100%;
+        max-height: 60%;
+      }
+    }
+  }
+}

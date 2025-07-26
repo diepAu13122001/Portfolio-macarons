@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="popup">
+    <div id="project-popup" class="hide">
+        <div id="projectDetails" class="projectDetails">
+            <button class="btn" id="close-popup-btn">x</button>
+            <!-- left -->
+            <div class="about-left">
+                <!-- carousel -->
+                <div id="project-imgs" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button
+                                type="button"
+                                data-bs-target="#project-imgs"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                        ></button>
+                        <button
+                                type="button"
+                                data-bs-target="#project-imgs"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                        ></button>
+                        <button
+                                type="button"
+                                data-bs-target="#project-imgs"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                        ></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <iframe
+                                    id="project-video"
+                                    src="https://www.youtube.com/embed/VLvBlG49BKA?si=0Cs26D0hmKa-vtWP"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                            ></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                    src="https://cdn.vietnambiz.vn/2020/3/24/project-planning-header2x-1585044567657817815413.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                    src="https://assets.plan.io/images/blog/title-IT-project-management-explained.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                            />
+                        </div>
+                    </div>
+                    <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#project-imgs"
+                            data-bs-slide="prev"
+                    >
+              <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+              ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#project-imgs"
+                            data-bs-slide="next"
+                    >
+              <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+              ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- table -->
+            </div>
+            <!-- right -->
+            <div class="about-right">
+                <div
+                        style="
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+                >
+                    <div class="h3 text-special" id="project-name">Project Name</div>
+                </div>
+                <!-- desc -->
+                <div class="project-detail">
+                    <table class="row-table">
+                        <tr>
+                            <th class="p text-special">Last updated:</th>
+                            <td class="p" id="project-created-at">25/04/2021</td>
+                        </tr>
+                        <tr>
+                            <th class="p text-special">Overview:</th>
+                            <td class="p">
+                                <div class="p" id="project-overview">
+                                    This is a short line to show my project overview.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="p text-special">System:</th>
+                            <td class="p" id="project-system">Microservices</td>
+                        </tr>
+                        <tr>
+                            <th class="p text-special">Tech stack:</th>
+                            <td>
+                                <div class="tags" id="project-skills">
+                                    <div class="tag">spring</div>
+                                    <div class="tag">reactjs</div>
+                                    <div class="tag">github</div>
+                                    <div class="tag">github</div>
+                                    <div class="tag">github</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="p text-special">Role:</th>
+                            <td class="p" id="project-role">Solo project</td>
+                        </tr>
+                        <tr>
+                            <th class="p text-special">Live demo:</th>
+                            <td class="p">
+                                <a href="#" id="project-live-demo-link" target="_blank"
+                                >Link</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="p text-special">Source code:</th>
+                            <td class="p">
+                                <a id="project-code-link" href="#" target="_blank">Link</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th class="p text-special">Features:</th>
+                            <td class="p">
+                                <ul id="project-features">
+                                    <li>Login/ Signup</li>
+                                    <li>Projects list</li>
+                                    <li>Account management</li>
+                                    <li>Restful API</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</th:block>
+
+<th:block th:fragment="projects-section">
+    <section id="projects">
+        <!-- title -->
+        <div class="main-header">
+            <div class="h1 text-special" id="header-title">Side Projects</div>
+            <hr class="line line-m border-special" />
+        </div>
+        <div id="project-list"></div>
+    </section>
+</th:block>
+</html>
+

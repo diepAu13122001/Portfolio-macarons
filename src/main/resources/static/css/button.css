@@ -1,0 +1,34 @@
+.button-groups {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  gap: 10px;
+  flex-flow: row wrap;
+  margin-top: 30px;
+}
+.btn {
+  display: inline-block; /* prevent layout shift */
+  border-radius: var(--radius-l);
+  border: 2px solid var(--current-attended-color);
+  padding: 10px 20px;
+  color: var(--current-color);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: var(--paragraph);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--current-attended-color);
+}
+
+.btn .disable {
+  color: var(--disable);
+}
+
+@media only screen and (max-width: 992px) {
+  .btn {
+    font-size: var(--phone-paragraph);
+    font-weight: 700;
+  }
+}
