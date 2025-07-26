@@ -9,7 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding: 20px;
+  overflow: hidden; /* 🔒 Prevent scrolling outside */
 }
 
 .projectDetails {
@@ -22,63 +23,70 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   max-width: 1100px;
-  scrollbar-width: thin;
   margin: 15px;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
-  max-height: 650px;
-  .about-right {
-    height: 100%;
-  }
 }
 
-/* The rest of your CSS can remain the same */
+.about-right {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--current-color) transparent;
+  width: 100%;
+}
+
+.project-detail {
+  flex-grow: 1;
+  overflow-y: auto; /* ✅ Only this part scrolls */
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--current-color) transparent;
+  margin-top: 20px;
+}
+
+/* width */
+.about-right::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.about-right::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.about-right::-webkit-scrollbar-thumb {
+  background: var(--current-color);
+  border-radius: 10px;
+}
+
+.about-left {
+  width: 100%;
+}
 
 /* carousel */
 #project-imgs {
   width: 100%;
   overflow: hidden;
   text-align: center;
-  img,
-  iframe {
-    height: 350px;
-    max-width: 800px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: var(--radius-l);
-    padding: 0;
-    margin: 0;
-  }
 }
+
+#project-imgs img,
+#project-imgs iframe {
+  height: 350px;
+  max-width: 800px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-l);
+  padding: 0;
+  margin: 0;
+}
+
 #project-name {
   margin-top: 20px;
   width: 100%;
-}
-
-.project-detail {
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: var(--current-color) transparent;
-  margin-top: 20px;
-  max-height: 80%;
-}
-
-/* width */
-.project-detail::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-.project-detail::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-.project-detail::-webkit-scrollbar-thumb {
-  background: var(--current-color);
-  border-radius: 10px;
 }
 
 #close-popup-btn {
@@ -108,12 +116,14 @@
   cursor: pointer;
 }
 
+/* Responsive */
 @media only screen and (max-width: 1200px) {
   #close-popup-btn {
     border: none;
     right: 5px;
     top: 5px;
   }
+
   #close-popup-btn:hover {
     background-color: transparent;
   }
@@ -121,28 +131,36 @@
 
 @media only screen and (max-width: 992px) {
   .projectDetails {
-    max-height: 100%;
-    .about-left {
-      grid-row: 1;
-      #project-imgs {
-        width: 100%;
-        text-align: center;
-        img,
-        iframe {
-          width: 500px;
-          height: 230px;
-        }
-      }
-    }
-    .about-right {
-      height: 100%;
+    grid-template-columns: 1fr;
+    height: 95vh;
+  }
 
-      grid-row: 2;
-      width: 100%;
-      .project-detail {
-        width: 100%;
-        max-height: 60%;
-      }
-    }
+  .about-left {
+    grid-row: 1;
+  }
+
+  #project-imgs {
+    width: 100%;
+    text-align: center;
+  }
+
+  #project-imgs img,
+  #project-imgs iframe {
+    width: 100%;
+    height: 230px;
+  }
+
+  .about-right {
+    grid-row: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .project-detail {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 100%;
   }
 }

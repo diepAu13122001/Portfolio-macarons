@@ -1,7 +1,7 @@
 const skills = [
   {
     name: "Languages",
-    items: ["Java", "JavaScript (ES6)", "HTML", "CSS/Sass", "Python", "SQL"],
+    items: ["Java", "JavaScript (ES6)", "Python"],
   },
   {
     name: "Frameworks",

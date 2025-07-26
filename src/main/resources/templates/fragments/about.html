@@ -1,80 +1,157 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<th:block th:fragment="about-section">
+  <th:block th:fragment="about-section">
     <section id="about">
-        <!-- title -->
-        <div class="main-header">
-            <div class="h1 text-special" id="header-title">About me</div>
-            <hr class="line line-m border-special" />
+      <!-- title -->
+      <div class="main-header">
+        <div class="h1 text-special" id="header-title">About me</div>
+        <hr class="line line-m border-special" />
+      </div>
+
+      <div class="h3 about-intro">
+        My full name is
+        <span class="h3 text-special"> Au Ngoc Diep </span> and I want to become
+        a
+        <span class="h3 text-special"> Fullstack Developer</span>
+      </div>
+      <div class="about-left">
+        <div class="p">
+          I'm a self-taught developer currently working as a coding mentor,
+          helping teenagers understand programming fundamentals and solve
+          real-world problems. While I haven’t worked as a developer yet, I’m
+          focused on becoming a fullstack developer with a strong emphasis on
+          backend systems and data-driven applications.
+          <br />
+          <br />
+          My goal is to build scalable systems that power great products behind
+          the scenes, and to keep learning by contributing to real-world
+          development teams.
         </div>
 
-        <div class="h3 about-intro">
-            My full name is
-            <span class="h3 text-special"> Au Ngoc Diep </span> and I want to
-            become a
-            <span class="h3 text-special"> Fullstack Developer</span>
+        <div class="button-groups">
+          <a class="btn" href="./data/CV_NgocDiep.pdf" download="DiepCV.pdf"
+            >Download CV</a
+          >
+          <a class="btn" href="#contact">Hire me</a>
         </div>
-        <div class="about-left">
-            <div class="p">
-                I'm currently an Engineer at Upstatement building things for the
-                web with some awesome people. I recently graduated from
-                Northeastern University after completing three awesome six-month
-                co-ops at MullenLowe U.S., Starry, and Apple Music.
-                <br />
-                <br />
-                As a software engineer, I enjoy bridging the gap between
-                engineering and design — combining my technical knowledge with my
-                keen eye for design to create a beautiful product. My goal is to
-                always build applications that are scalable and efficient under
-                the hood while providing engaging, pixel-perfect user experiences.
-            </div>
+      </div>
+      <div class="about-right">
+        <table class="row-table">
+          <tr>
+            <th class="p text-special">Age:</th>
+            <td class="p">25</td>
+          </tr>
+          <tr>
+            <th class="p text-special">Loc:</th>
+            <td class="p">
+              District 10, HCM city,<span class="text-special">VietNam</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="p text-special">Email:</th>
+            <td class="p">
+              <a href="mailto:diepau1312@gmail.com">diepau1312@gmail.com</a>
+            </td>
+          </tr>
+          <tr>
+            <th class="p text-special">Phone:</th>
+            <td class="p">
+              <a href="tel:+84764699015">+84 764 699 015</a>
+            </td>
+          </tr>
+          <tr>
+            <th class="p text-special">Lang:</th>
+            <td class="p">Vietnamese, English, Chinese</td>
+          </tr>
+          <tr>
+            <th class="p text-special">My Fav🥰:</th>
+            <td class="p">
+              <div class="tags">
+                <div class="tag">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/226/226777.png"
+                  />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://www.svgrepo.com/show/354380/spring-icon.svg"
+                  />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://images.icon-icons.com/2699/PNG/512/mysql_logo_icon_169941.png"
+                  />
+                </div>
+                <div class="tag">
+                  <img src="https://img.icons8.com/fluent/512/node-js.png" />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/python-programming-language-icon.png"
+                  />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/2048px-IntelliJ_IDEA_Icon.svg.png"
+                  />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+                  />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
+                  />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png"
+                  />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png"
+                  />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/0/00/Mongodb.png"
+                  />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+                  />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://www.svgrepo.com/show/354202/postman-icon.svg"
+                  />
+                </div>
+                <div class="tag">
+                  <img
+                    src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+                  />
+                </div>
 
-            <div class="button-groups">
-                <a class="btn" href="./data/CV_NgocDiep.pdf" download="DiepCV.pdf"
-                >Download CV</a
-                >
-                <a class="btn" href="#contact">Hire me</a>
-            </div>
-        </div>
-        <div class="about-right">
-            <table class="row-table">
-                <tr>
-                    <th class="p text-special">Age:</th>
-                    <td class="p">25</td>
-                </tr>
-                <tr>
-                    <th class="p text-special">Loc:</th>
-                    <td class="p">
-                        HCM city, <span class="text-special">VietNam</span>
-                    </td>
-                </tr>
-                <tr>
-                    <th class="p text-special">Email:</th>
-                    <td class="p">
-                        <a href="mailto:diepau1312@gmail.com">diepau1312@gmail.com</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th class="p text-special">Phone:</th>
-                    <td class="p">
-                        <a href="tel:+84764699015">+84 764 699 015</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th class="p text-special">Lang:</th>
-                    <td class="p">Vietnamese, English, Chinese</td>
-                </tr>
-                <tr>
-                    <th class="p text-special">Tech skils:</th>
-                    <td class="p"></td>
-                </tr>
-                <tr>
-                    <th class="p text-special">Tools:</th>
-                    <td class="p">Vietnamese, English, Chinese</td>
-                </tr>
-            </table>
-        </div>
+                <div class="tag">
+                  <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-eclipse-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-vol-2-pack-logos-icons-3029968.png?f=webp"
+                  />
+                </div>
+
+                <div class="tag">
+                  <img
+                    src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/aws-icon.png"
+                  />
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
     </section>
-</th:block>
+  </th:block>
 </html>
-
