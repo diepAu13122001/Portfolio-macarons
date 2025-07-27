@@ -21,8 +21,11 @@ function changeNavActiveWhenScrolling(linkList) {
   const sectionHeight = document.querySelector("section").clientHeight;
 
   // Determine the index of the current section in view
-  const currentIndex =
+  let currentIndex =
     Math.floor((scrollPosition + sectionHeight) / sectionHeight) - 1;
+  if (currentIndex > linkList.length - 1) {
+    currentIndex = linkList.length - 1;
+  }
 
   linkList.forEach((link, index) => {
     if (index === currentIndex) {
@@ -62,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const slidebarNav = document.querySelector(".full-intro");
   const expandNavBtn = document.querySelector("#expand-nav-btn");
   const closeNavBtn = document.querySelector("#close-nav-btn");
-
 
   this.location.href = "#about";
 

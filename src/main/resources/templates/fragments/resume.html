@@ -1,93 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<th:block th:fragment="resume-section">
+  <th:block th:fragment="resume-section">
     <section id="resume">
-        <!-- title -->
-        <div class="main-header">
-            <div class="h1 text-special" id="header-title">My Journey</div>
-            <hr class="line line-m border-special" />
+      <!-- title -->
+      <div class="main-header">
+        <div class="h1 text-special" id="header-title">My Journey</div>
+        <hr class="line line-m border-special" />
+      </div>
+
+      <div class="about-left" id="edu">
+        <div class="h3 title">
+          <i class="fa-solid fa-graduation-cap"></i> Education
         </div>
-
-        <div class="about-left" id="edu">
-            <div class="h3 title">
-                <i class="fa-solid fa-graduation-cap"></i> Education
-            </div>
-            <div id="edu-list">
-                <div class="resume-card">
-                    <div class="circle-dot"></div>
-                    <p class="text-special resume-time">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <span>02/2020</span> - <span>04/2020</span>
-                    </p>
-                    <h3 class="h3 resume-title">XYZ University (Sometown, NJ)</h3>
-                    <p class="p resume-desc">BFA in Graphic Design</p>
-                </div>
-            </div>
-            <div class="resume-card">
-                <div class="circle-dot"></div>
-                <p class="text-special resume-time">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <span>02/2020</span> - <span>04/2020</span>
-                </p>
-                <h3 class="h3 resume-title">XYZ University (Sometown, NJ)</h3>
-                <p class="p resume-desc">
-                    BFA in Graphic Design BFA in Graphic Design BFA in Graphic
-                    Design
-                </p>
-            </div>
+        <div id="edu-list">
+          <div class="resume-card">
+            <div class="circle-dot"></div>
+            <p class="text-special resume-time">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>09/2019</span> - <span>03/2024</span>
+            </p>
+            <h3 class="h3 resume-title">NONG LAM UNIVERSITY, HCMC</h3>
+            <p class="p resume-desc">Major: Information technology</p>
+            <p class="p resume-desc">GPA: 2.87/4.0</p>
+            <p class="p resume-desc italic">
+              Courses: data structure, design Pattern, algorithm, computer
+              network, database system, software engineering, computer
+              architecture, operating system
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div class="about-right" id="exp">
-            <div class="h3 title">
-                <i class="fa-solid fa-briefcase"></i> Experience
-            </div>
-            <div id="exp-list">
-                <div class="resume-card">
-                    <div class="circle-dot"></div>
-
-                    <p class="text-special resume-time">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <span>02/2020</span> - <span>04/2020</span>
-                    </p>
-                    <h3 class="h3 resume-title">XYZ University (Sometown, NJ)</h3>
-                    <p class="p resume-desc">
-                        BFA in Graphic Design, BFA in Graphic Design, BFA in Graphic
-                        Design
-                    </p>
-                </div>
-                <div class="resume-card">
-                    <div class="circle-dot"></div>
-
-                    <p class="text-special resume-time">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <span>02/2020</span> - <span>04/2020</span>
-                    </p>
-                    <h3 class="h3 resume-title">XYZ University (Sometown, NJ)</h3>
-                    <p class="p resume-desc">BFA in Graphic Design</p>
-                </div>
-                <div class="resume-card">
-                    <div class="circle-dot"></div>
-
-                    <p class="text-special resume-time">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <span>02/2020</span> - <span>04/2020</span>
-                    </p>
-                    <h3 class="h3 resume-title">XYZ University (Sometown, NJ)</h3>
-                    <p class="p resume-desc">BFA in Graphic Design</p>
-                </div>
-                <div class="resume-card">
-                    <div class="circle-dot"></div>
-
-                    <p class="text-special resume-time">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <span>02/2020</span> - <span>04/2020</span>
-                    </p>
-                    <h3 class="h3 resume-title">XYZ University (Sometown, NJ)</h3>
-                    <p class="p resume-desc">BFA in Graphic Design</p>
-                </div>
-            </div>
+      <div class="about-right" id="exp">
+        <div class="h3 title">
+          <i class="fa-solid fa-briefcase"></i> Experience
         </div>
+        <div id="exp-list">
+          <div class="resume-card">
+            <div class="circle-dot"></div>
+
+            <p class="text-special resume-time">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>07/2022</span> - <span>now</span>
+            </p>
+            <h3 class="h3 resume-title">MindX Technology School</h3>
+            <p class="p resume-desc">LEC & Mentor for Coding courses</p>
+            <p class="p resume-desc italic">
+              Teach and support kids and teenagers studying the basics of
+              technology and build amazing projects.
+            </p>
+
+            <ul class="p resume-ul">
+              <li>
+                Desktop app courses:
+                <strong class="text-special">Python</strong> - QT Designer -
+                PyQt6
+              </li>
+              <li>
+                Data structure courses: Python (pandas, matplotlib,
+                <strong class="text-special">sklearn</strong>) - Jupyter
+              </li>
+              <li>
+                Front-end web courses: HTML, CSS, JS -
+                <strong class="text-special">Firebase</strong> - Github
+              </li>
+              <li>
+                2D Game courses:
+                <strong class="text-special">GameMaker Studio 2</strong>
+              </li>
+              <li>
+                Mobile design courses:
+                <strong class="text-special">Thunkable</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-</th:block>
+  </th:block>
 </html>
-

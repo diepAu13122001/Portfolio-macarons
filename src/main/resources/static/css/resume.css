@@ -3,6 +3,13 @@
   grid-template-columns: 1fr 1fr;
   justify-content: start;
   align-items: baseline;
+
+  .about-left,
+  .about-right {
+    height: fit-content;
+    overflow: hidden;
+    scrollbar-width: none;
+  }
 }
 
 .title {
@@ -20,12 +27,23 @@
 .resume-time {
   padding: 0;
   margin: 15px 0;
+  i {
+    margin-right: 5px;
+  }
 }
 
 .resume-title,
 .resume-desc {
   padding: 0;
   margin: 10px 0;
+}
+
+.resume-desc.text-special {
+  margin: 0;
+}
+.resume-ul li {
+  padding: 0;
+  margin-left: 15px;
 }
 
 .circle-dot {
@@ -48,9 +66,18 @@
 
 @media only screen and (max-width: 992px) {
   #resume {
-    .about-left, .about-right {
+    .about-left,
+    .about-right {
       width: fit-content;
       justify-self: center;
+    }
+
+    .about-left {
+      grid-row-start: 3;
+    }
+
+    .main-header {
+      grid-row-start: 1;
     }
   }
   .resume-card {
@@ -60,4 +87,8 @@
   .title {
     margin: 15px 0;
   }
+}
+
+.italic {
+  font-style: italic;
 }
