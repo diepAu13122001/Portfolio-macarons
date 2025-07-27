@@ -25,7 +25,6 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -67,11 +66,10 @@ section {
     display: flex;
   }
   .main-content {
-    min-height: 0;
     width: 100%;
   }
   section {
-    height: 100%;
+    min-height:0;
     margin-left: 0;
     max-width: 600px;
   }

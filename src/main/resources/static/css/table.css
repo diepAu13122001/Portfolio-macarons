@@ -18,10 +18,6 @@
   white-space: nowrap;
 }
 
-.row-table td {
-  min-width: 300px;
-}
-
 /* Optional: link styling */
 .row-table a {
   color: var(--current-color); /* use your theme var */
