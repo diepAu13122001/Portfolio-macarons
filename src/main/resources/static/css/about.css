@@ -1,6 +1,6 @@
 #about {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 50% 50%;
   align-items: baseline;
   column-gap: 15px;
 }
@@ -44,22 +44,28 @@
     justify-self: center;
   }
 
-  .about-right {
-    grid-row: 3;
-    padding: 0;
-    margin-bottom: 15px;
-    margin-top: 0;
+  .main-header {
+    grid-row-start: 1;
   }
 
-  .about-left {
-    grid-row: 4;
-  }
+   #about {
+     .about-right {
+       grid-row: 3;
+       padding: 0;
+       margin-bottom: 15px;
+       margin-top: 0;
+     }
 
-  .about-intro {
-    max-width: 500px;
-    justify-self: center;
-    margin-top: 0;
-    align-self: end;
-    margin-bottom: 5px;
-  }
+     .about-left {
+       grid-row: 4;
+     }
+
+     .about-intro {
+       max-width: 500px;
+       justify-self: center;
+       margin-top: 0;
+       align-self: end;
+       margin-bottom: 5px;
+     }
+   }
 }

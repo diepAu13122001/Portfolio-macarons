@@ -26,7 +26,6 @@ function changeNavActiveWhenScrolling(linkList) {
   if (currentIndex > linkList.length - 1) {
     currentIndex = linkList.length - 1;
   }
-
   linkList.forEach((link, index) => {
     if (index === currentIndex) {
       link.classList.add("active");
@@ -66,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const expandNavBtn = document.querySelector("#expand-nav-btn");
   const closeNavBtn = document.querySelector("#close-nav-btn");
 
-  this.location.href = "#about";
+  this.location.href = this.location.origin + "#about";
 
   // bat su kien nut dong - mo menu
   expandNavBtn.addEventListener("click", () => {

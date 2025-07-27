@@ -44,8 +44,8 @@ section {
   scroll-behavior: smooth;
   transition: all 0.5s ease-in-out;
   box-sizing: border-box;
-  min-height: 100vh;
   margin-bottom: 50px;
+  min-height: 100vh;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -67,7 +67,7 @@ section {
     display: flex;
   }
   .main-content {
-    height: fit-content;
+    min-height: 0;
     width: 100%;
   }
   section {
