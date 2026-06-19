@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diep Au — Full-Stack Developer</title>
+  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -95,6 +96,13 @@
   <!-- RIGHT PANEL -->
   <div id="right-panel">
     <div class="rpanel-btn" id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    <div class="rpanel-btn" id="lang-btn">
+      <span id="lang-text">VN</span>
+      <div id="lang-options" style="display:none; position:absolute; bottom:-80px; right:0; background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:8px; padding:8px; min-width:80px;">
+        <button class="lang-opt" data-lang="vi" style="display:block; width:100%; padding:8px 12px; border:none; background:transparent; cursor:pointer; text-align:left; font-size:14px; margin:4px 0; border-radius:4px;" onmouseover="this.style.background='var(--color-background-secondary)'" onmouseout="this.style.background='transparent'">Tiếng Việt</button>
+        <button class="lang-opt" data-lang="en" style="display:block; width:100%; padding:8px 12px; border:none; background:transparent; cursor:pointer; text-align:left; font-size:14px; margin:4px 0; border-radius:4px;" onmouseover="this.style.background='var(--color-background-secondary)'" onmouseout="this.style.background='transparent'">English</button>
+      </div>
+    </div>
     <div class="rpanel-btn" id="mode-btn">
       <i class="fa-solid fa-sun" id="sun"></i>
       <i class="fa-solid fa-moon" id="moon"></i>
@@ -122,10 +130,12 @@
       <div class="about-grid">
         <div class="about-text-col">
           <div class="p">
-            Self-driven developer currently working as a Coding Mentor at MindX Technology School,
-            teaching programming to teens. I've built a production-ready Finance Tracker SaaS
-            with 3-tier subscriptions, CI/CD, and cloud deployment — and I'm actively growing
-            my backend and DevOps skill set through real-world projects.
+            Adaptable developer and mentor with a strong capacity for self-learning and cross-team 
+            collaboration. I'm passionate about deepening my technical and academic expertise, and I'm 
+            excited by the prospect of building my career in an international environment. Currently 
+            focused on developing full-stack skills while teaching and mentoring—both experiences that 
+            reinforce my commitment to mastering engineering fundamentals and contributing to technical 
+            communities.
           </div>
           <div class="btn-group">
             <a class="btn" href="./cv.pdf" download="DiepAu_CV.pdf">Download CV</a>
@@ -209,7 +219,7 @@
             / CSS</div>
         </div>
         <div class="skill-col">
-          <h3>Frameworks</h3>
+          <h3>Frameworks & Libraries</h3>
           <div class="skill-item"><img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
               alt="Spring" />Spring Boot 3</div>
@@ -217,17 +227,17 @@
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
               alt="React" />React 18</div>
           <div class="skill-item"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg"
-              alt="NestJS" />NestJS</div>
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+              alt="Firebase" />Firebase</div>
           <div class="skill-item"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-              alt="Tailwind" />Tailwind CSS</div>
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+              alt="TensorFlow" />TensorFlow</div>
           <div class="skill-item"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-              alt="Node.js" />Node.js</div>
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="PyQt6" />PyQt6 / Streamlit</div>
         </div>
         <div class="skill-col">
-          <h3>Database</h3>
+          <h3>Database & Cloud</h3>
           <div class="skill-item"><img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
               alt="PostgreSQL" />PostgreSQL</div>
@@ -235,31 +245,27 @@
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
               alt="MySQL" />MySQL</div>
           <div class="skill-item"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-              alt="MongoDB" />MongoDB</div>
-          <div class="skill-item"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"
-              alt="Prisma" />Prisma / Flyway</div>
-          <div class="skill-item"><img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
               alt="Firebase" />Firebase</div>
-        </div>
-        <div class="skill-col">
-          <h3>DevOps &amp; Tools</h3>
           <div class="skill-item"><img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
               alt="Docker" />Docker</div>
           <div class="skill-item"><img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-              alt="GitHub" />GitHub Actions</div>
+              alt="GitHub Actions" />GitHub Actions</div>
+        </div>
+        <div class="skill-col">
+          <h3>Teaching & Game Dev</h3>
           <div class="skill-item"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />Git</div>
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Scratch" />Scratch (RAISE)</div>
+          <div class="skill-item"><i class="fas fa-gamepad" style="font-size:24px;"></i> GameMaker Studio 2</div>
+          <div class="skill-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />Git /
+            GitHub</div>
           <div class="skill-item"><img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg"
-              alt="IntelliJ" />IntelliJ IDEA</div>
-          <div class="skill-item"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-              alt="Figma" />Figma</div>
+              alt="IntelliJ" />IntelliJ IDEA / VSCode</div>
         </div>
       </div>
     </section>
@@ -305,12 +311,13 @@
             <div class="resume-time">07/2022 — Present</div>
             <div class="resume-title">MindX Technology School</div>
             <div class="resume-sub">Lecturer &amp; Coding Mentor</div>
-            <div class="resume-desc">Teach and mentor teens (10–17) in programming fundamentals and project-based
-              learning.</div>
+            <div class="resume-desc">Passionate educator teaching programming fundamentals to teens (10–17) with a focus on hands-on, project-based learning and real-world application.</div>
             <ul class="resume-list">
-              <li>Python — desktop apps (PyQt6), data science (pandas, sklearn)</li>
-              <li>Front-end web — HTML/CSS/JS + Firebase + GitHub</li>
-              <li>2D Game dev — GameMaker Studio 2</li>
+              <li><strong>Curriculum Coverage:</strong> Scratch (RAISE), Python (PyQt6 desktop apps, TensorFlow/Streamlit data science), Web Frontend (HTML/CSS/JS + Firebase), GameMaker Studio 2</li>
+              <li><strong>Teaching Expertise:</strong> Interactive instruction, live coding demos, personalized learning paths, managing both in-person and online classes</li>
+              <li><strong>Student Development:</strong> Design practical exercises and mini-projects; guide learners through portfolio-building apps</li>
+              <li><strong>Parent & Stakeholder Communication:</strong> Regular progress updates, learning roadmap guidance, collaborative approach to student retention</li>
+              <li><strong>Operational Support:</strong> Lesson planning, preparation of teaching materials and demo environments, coordination with sales and academic teams</li>
             </ul>
           </div>
         </div>
