@@ -99,7 +99,7 @@ const PROJECTS = [
       "Ứng dụng quản lý tài chính cá nhân với hệ thống 3 gói (Free/Plus/Premium), biểu đồ thu chi và plan gating bằng Spring AOP.",
     system: "Monolithic",
     role: "Solo project",
-    date: "05/2026",
+    date: "03/2026 - 05/2026",
     skills: [
       "React 18",
       "TypeScript",
